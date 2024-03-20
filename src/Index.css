@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+   width: 100%;
+   height: 10vh;
+   background-color: rgb(7, 140, 201);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+   color:  #fff;
+}
+
+.navbar .cart{
+    width: 80px;
+    height: 50px;
+    /* padding: .5em 0 .5em 1.2em; */
+    /* border: solid ; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar .cart p{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    
+}
+.navbar .cart a{
+    color: #fff;
+}
+.product{
+    width: 100%;
+    height: 90vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    overflow-y: scroll;
+    padding: 2.5em;
+}
+.prod{
+    width: 300px;
+    height: 420px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+.prod:hover{
+    transform: scale(1.02);
+}
+.prod .image{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.prod .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.prod .details{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.prod .details button{
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-container .cart-items{
+    width: 60%;
+    height: 100%;
+    background-color: bisque;
+}
+.cart-container .cart-items h2{
+    width: 100%;
+    height: 8%;
+    /* border: solid #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-container .cart-items .items{
+    width: 100%;
+    height: 82%;
+    /* border: solid; */
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.cart-container .cart-items .items .incart{
+    width: 100%;
+    margin-top: .5rem;
+    height: 15%;
+    border: solid rgb(5, 149, 181);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5em;
+}
+.cart-container .cart-items .items .incart .image{
+    width: 20%;
+    height: 100%;
+   
+}
+.cart-container .cart-items .items .incart .image img{
+    width: 70%;
+    height: 95%;
+    border-radius: 5px;
+}
+.cart-container .cart-items .items .incart .data{
+    width: 70%;
+    height: 100%;
+    
+}
+.cart-container .cart-items .items .incart .data h4{
+    width: 100%;
+    height: 50%;
+    /* text-overflow: ellipsis;
+    border: solid #fff; */
+}
+.cart-container .cart-items .items .incart .data p{
+    width: 100%;
+    height: 30%;
+    /* text-overflow: ellipsis;
+    border: solid #fff; */
+    margin-top: 5px;
+}
+
+.cart-container .cart-items .items .incart .quantity{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid #fff;  */
+}
+.cart-container .cart-items .items .incart .quantity button{
+    width: 30px;
+    height: 25px;
+}
+.incre{
+    background-color: rgb(19, 210, 19);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.decre{
+    background-color: red;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.cart-container .cart-items .items .incart .remove{
+    width: 10%;
+    height: 100%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-container .cart-items .items .incart .remove button{
+    width: 90%;
+    height: 60%;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-container .cart-items  .total{
+    height: 10%;
+    width: 100%;
+    /* border: solid black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(7, 142, 201);
+    color: #fff;
+}
+.cart-container .cart-items  .total h2{
+    width: 200px;
+    height: 100%;
+    text-align: right;
+}
+
+
+
+
+
